@@ -22,7 +22,7 @@ require 'madlibber'
 
 text = "At Indiegogo you’ll find a welcoming, supportive community
   that embraces collaboration, fearlessness and authenticity. We
-  are a a rapidly growing organization and our platform is used by
+  are a rapidly growing organization and our platform is used by
   people all over the world to raise money for their creative,
   cause-related, or entrepreneurial ideas. Our customers are
   passionate about their funding campaigns, and so are we! We are a
@@ -36,7 +36,7 @@ MadLibber.libberfy text
 EXAMPLE OUTPUT:
 ```
 At Indiegogo you'll find a welcoming , supportive community that
-embraces collaboration , fearlessness and authenticity . We are a a
+embraces collaboration , fearlessness and authenticity . We are a
 rapidly growing organization and our <noun> is used by people all
 over the world to raise money for their <adjective> , cause-related ,
 or <adjective> ideas . Our customers are passionate about their
@@ -54,7 +54,7 @@ require 'madlibber'
 
 text = "At Indiegogo you’ll find a welcoming, supportive community
   that embraces collaboration, fearlessness and authenticity. We
-  are a a rapidly growing organization and our platform is used by
+  are a rapidly growing organization and our platform is used by
   people all over the world to raise money for their creative,
   cause-related, or entrepreneurial ideas. Our customers are
   passionate about their funding campaigns, and so are we! We are a
@@ -68,7 +68,7 @@ MadLibber.libberfy text, { num_of_blanks: 15 }
 EXAMPLE OUTPUT:
 ```
 At Indiegogo you'll <verb> a welcoming , supportive community that
-embraces collaboration , fearlessness and <noun> . We are a a
+embraces collaboration , fearlessness and <noun> . We are a
 <adverb> growing organization and our platform is used by people
 all over the <noun> to <verb> <noun> for their <adjective> ,
 <adjective> , or entrepreneurial ideas . Our <plural_noun> are
