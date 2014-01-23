@@ -1,4 +1,4 @@
-# Madlibber
+# MadLibber
 
 TODO: Write a gem description
 
