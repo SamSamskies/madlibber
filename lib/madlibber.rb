@@ -29,7 +29,7 @@ module MadLibber
 
     tag_word_pairs.map.with_index do |tw_pair, index|
       (fillable_indices.include? index) ? TAGS[ tw_pair[:tag] ] : tw_pair[:word]
-    end.join(" ")
+    end.join(" ").gsub " '", "'"
   end
 
   def create_tag_word_pairs word
