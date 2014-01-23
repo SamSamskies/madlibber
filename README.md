@@ -1,6 +1,6 @@
 # MadLibber
 
-TODO: Write a gem description
+Ruby gem that converts any body of text into a Mad Lib.
 
 ## Installation
 
