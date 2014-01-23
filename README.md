@@ -1,6 +1,6 @@
 # MadLibber
 
-Ruby gem that converts any body of text into a Mad Lib.
+Ruby gem that can convert any body of text into a Mad Lib.
 
 ## Installation
 
