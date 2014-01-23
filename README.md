@@ -84,7 +84,7 @@ Right now the following fillable fields randomly populate the Mad Lib.
 
 ```
 <noun>, <plural_noun>, <proper_noun>, <verb>, <verb_past_tense>,
-<adjective>, <adverb> and <interjection>
+<verb_ending_with_ing>, <adjective>, <adverb> and <interjection>
 ```
 
 ## Contributing

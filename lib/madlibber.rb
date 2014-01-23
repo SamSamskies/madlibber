@@ -15,6 +15,7 @@ module MadLibber
     "NNP" => "<proper_noun>",
     "VB"  => "<verb>",
     "VBD" => "<verb_past_tense>",
+    "VBG" => "<verb_ending_with_ing>",
     "JJ"  => "<adjective>",
     "RB"  => "<adverb>",
     "UH"  => "<interjection>"
