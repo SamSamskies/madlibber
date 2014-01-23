@@ -25,7 +25,10 @@ module MadLibber
     defaults = OPTIONS
     defaults.merge! options
     tgr = EngTagger.new
-    tag_word_pairs = tgr.get_readable(text).split.map { |tagged_word| create_tag_word_pairs tagged_word }
+    tagged_text = tgr.get_readable(text)
+    return unless tagged_text
+
+    tag_word_pairs = tagged_text.split.map { |tagged_word| create_tag_word_pairs tagged_word }
     fillable_indices = find_fillable_indices(tag_word_pairs).shuffle.take defaults[:num_of_blanks]
 
     tag_word_pairs.map.with_index do |tw_pair, index|
