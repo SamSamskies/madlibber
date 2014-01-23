@@ -33,6 +33,19 @@ text = "At Indiegogo you’ll find a welcoming, supportive community
 
 MadLibber.libberfy text
 ```
+EXAMPLE OUTPUT:
+```
+At Indiegogo you'll find a welcoming , supportive community that
+embraces collaboration , fearlessness and authenticity . We are a a
+rapidly growing organization and our <noun> is used by people all
+over the world to raise money for their <adjective> , cause-related ,
+or <adjective> ideas . Our customers are passionate about their
+funding <plural_noun> , and <adverb> are we ! We are a team of
+passionate , <adjective> , team-players who are lucky enough to be
+<adjective> to call helping people achieve their dream <noun> . We
+love our dogs , good food , <noun> , and post-it notes ! <plural_noun>
+of post-it notes !
+```
 
 By default, it generates a Mad Lib with 10 fillable fields if 10 fillable fields are available. The following example illustrates how you could specify how many fillable fields that you would like:
 
@@ -51,6 +64,19 @@ text = "At Indiegogo you’ll find a welcoming, supportive community
   Lots of post-it notes!"
 
 MadLibber.libberfy text, { num_of_blanks: 15 }
+```
+EXAMPLE OUTPUT:
+```
+At Indiegogo you'll <verb> a welcoming , supportive community that
+embraces collaboration , fearlessness and <noun> . We are a a
+<adverb> growing organization and our platform is used by people
+all over the <noun> to <verb> <noun> for their <adjective> ,
+<adjective> , or entrepreneurial ideas . Our <plural_noun> are
+passionate about their funding campaigns , and <adverb> are we !
+We are a team of passionate , <adjective> , <noun> who are lucky
+enough to be able to call helping people achieve their dream work .
+We love our dogs , good food , <noun> , and post-it <plural_noun> !
+Lots of post-it <plural_noun> !
 ```
 
 ## Available fillable fields
