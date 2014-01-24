@@ -47,7 +47,13 @@ love our dogs , good food , <noun> , and post-it notes ! <plural_noun>
 of post-it notes !
 ```
 
-By default, it generates a Mad Lib with 10 fillable fields if 10 fillable fields are available. The following example illustrates how you could specify how many fillable fields that you would like:
+###OPTIONS
+```
+num_of_blanks (defaults to 10)
+html_form (defaults to false)
+```
+
+The following example illustrates how you could specify how many fillable fields that you would like and that you want response as an HTML form:
 
 ```ruby
 require 'madlibber'
@@ -63,20 +69,30 @@ text = "At Indiegogo you’ll find a welcoming, supportive community
   work. We love our dogs, good food, coffee, and post-it notes!
   Lots of post-it notes!"
 
-MadLibber.libberfy text, { num_of_blanks: 15 }
+MadLibber.libberfy text, { num_of_blanks: 15, html_form: 1 }
 ```
 EXAMPLE OUTPUT:
 ```
-At Indiegogo you'll <verb> a welcoming , supportive community that
-embraces collaboration , fearlessness and <noun> . We are a
-<adverb> growing organization and our platform is used by people
-all over the <noun> to <verb> <noun> for their <adjective> ,
-<adjective> , or entrepreneurial ideas . Our <plural_noun> are
-passionate about their funding campaigns , and <adverb> are we !
-We are a team of passionate , <adjective> , <noun> who are lucky
-enough to be able to call helping people achieve their dream work .
-We love our dogs , good food , <noun> , and post-it <plural_noun> !
-Lots of post-it <plural_noun> !
+<form id='madlib-form'>
+At Indiegogo you'll <input type='text' placeholder=''verb> a
+welcoming , supportive community that embraces collaboration ,
+fearlessness and <input type='text' placeholder='noun'> . We are a
+<input type='text' placeholder='adverb'> growing organization and
+our platform is used by people all over the <input type='text'
+placeholder='noun'> to <input type='text' placeholder='verb'>
+<input type='text' placeholder='noun'> for their <input type='text'
+placeholder='adjective'> , <input type='text' placeholder='adjective'> ,
+or entrepreneurial ideas . Our <input type='text'
+placeholder='plural_noun'> are passionate about their funding
+campaigns , and <input type='text' placeholder='adverb'> are we !
+We are a team of passionate , <input type='text'
+placeholder='adjective'> , <input type='text' placeholder='noun'> who
+are lucky enough to be able to call helping people achieve their dream
+work . We love our dogs , good food , <input type='text'
+placeholder='noun'> , and post-it <input type='text'
+placeholder='plural_noun'> ! Lots of post-it <input type='text'
+placeholder='plural_noun'> !
+</form>
 ```
 
 ## Available fillable fields
