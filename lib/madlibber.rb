@@ -22,15 +22,15 @@ module MadLibber
   }
 
   TAGS_HTML = {
-    "NN"  => "<input type='text' placeholder='noun'>",
-    "NNS" => "<input type='text' placeholder='plural_noun'>",
-    "NNP" => "<input type='text' placeholder='proper_noun'>",
-    "VB"  => "<input type='text' placeholder='verb'>",
-    "VBD" => "<input type='text' placeholder='verb_past_tense'>",
-    "VBG" => "<input type='text' placeholder='verb_ending_with_ing'>",
-    "JJ"  => "<input type='text' placeholder='adjective'>",
-    "RB"  => "<input type='text' placeholder='adverb'>",
-    "UH"  => "<input type='text' placeholder='interjection'>"
+    "NN"  => "<input type='text' placeholder='noun' required>",
+    "NNS" => "<input type='text' placeholder='plural_noun' required>",
+    "NNP" => "<input type='text' placeholder='proper_noun' required>",
+    "VB"  => "<input type='text' placeholder='verb' required>",
+    "VBD" => "<input type='text' placeholder='verb_past_tense' required>",
+    "VBG" => "<input type='text' placeholder='verb_ending_with_ing' required>",
+    "JJ"  => "<input type='text' placeholder='adjective' required>",
+    "RB"  => "<input type='text' placeholder='adverb' required>",
+    "UH"  => "<input type='text' placeholder='interjection' required>"
   }
 
   def libberfy text, options = OPTIONS
