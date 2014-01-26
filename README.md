@@ -72,7 +72,7 @@ text = "At Indiegogo you’ll find a welcoming, supportive community
 MadLibber.libberfy text, { num_of_blanks: 15, html_form: 1 }
 ```
 EXAMPLE OUTPUT:
-```
+```html
 <form id='madlib-form'>
 At Indiegogo you'll <input type='text' placeholder=''verb> a
 welcoming , supportive community that embraces collaboration ,
